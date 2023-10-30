@@ -113,12 +113,13 @@ const AboutSection = () => {
       {/*About Section Card End From Here */}
 
       {/*About Section Impression Number 🔢 Start From Here */}
+
       {/* <div className="bg-[url('/assets/images/bg-tablet.webp')] bg-no-repeat bg-right-top bg-cover w-80"></div> */}
-      <div className="mx-auto mt-16">
+      <div className="mx-auto mt-36">
         <h2 className="text-center text-3xl font-bold text-gray-700">
           HERE'RE SOME IMPRESSIVE NUMBER ABOUT US
         </h2>
-        <div className="grid grid-cols-4 place-items-center max-w-2xl mx-auto mt-16">
+        <div className="grid grid-cols-4 place-items-center max-w-2xl mx-auto my-16">
           <div className="text-center">
             <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
               7522
