@@ -90,13 +90,13 @@ const Features = () => {
     <div className="py-16">
       {/* Features section Heading text start from here */}
       <section
-        id="ABOUT-SECTION-HEADING-TEXT"
+        id="FEATURES-SECTION"
         className="text-center relative overflow-hidden "
       >
-        <h2 className="cursor-pointer stroke-text-light dark:stroke-text-dark text-7xl uppercase tracking-wider opacity-10 font-extrabold inline-block">
+        <h2 className="lg:inline-block hidden cursor-pointer stroke-text-light dark:stroke-text-dark text-7xl uppercase tracking-wider opacity-10 font-extrabold ">
           FEATURES
         </h2>
-        <h3 className="text-3xl font-semibold absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-3/4 inline-block text-gray-600">
+        <h3 className="text-3xl font-semibold lg:absolute lg:left-1/2 lg:top-3/4 lg:-translate-x-1/2 lg:-translate-y-3/4 inline-block text-gray-600 relative">
           WE ARE CREATIVE CRAFTING WITH LOVE
         </h3>
       </section>
@@ -104,13 +104,15 @@ const Features = () => {
 
       {/* Features section items text start from here */}
 
-      <div className="max-w-5xl mx-auto mt-16">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="max-w-5xl mx-auto mt-16 lg:px-0 px-5">
+        <div className="grid lg:grid-cols-3 gap-5">
           {featuresData.map((item: FeaturesDataType) => (
             <div key={item.id} className="flex items-start mt-9">
               <i
                 style={{ backgroundColor: `${item.color}` }}
-                className={` rounded-full me-4 p-3 text-white`}
+                className={`${
+                  item.id === 6 && "bg-cyan-400"
+                } rounded-full me-4 p-3 text-white`}
               >
                 {item.icons}
               </i>

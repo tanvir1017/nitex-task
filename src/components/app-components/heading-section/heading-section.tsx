@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Navbar from "../navbar/navbar";
+import { NavbarNewUILook } from "../navigation/navbar";
 
 const HeadingSection = () => {
   return (
     <>
-      <div className="bg-[#FCFBFC] pt-10">
+      <div id="#" className="bg-[#FCFBFC] pt-10">
         {/* Heading section  about the webpage*/}
-        <div className="flex items-center justify-between ">
-          <div className="max-w-2xl">
+        <div className="lg:flex lg:flex-row flex flex-col-reverse items-center justify-between">
+          <div className="max-w-2xl ">
             <section className="px-8">
-              <h1 className="text-6xl font-bold">
-                CREATIVE <br /> AND PROFESSIONAL
+              <h1 className="lg:text-6xl text-3xl lg:mt-0 mt-10 font-bold">
+                CREATIVE <br className="lg:block hidden" /> AND PROFESSIONAL
               </h1>
               <p className="mt-5">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
@@ -34,7 +34,9 @@ const HeadingSection = () => {
         </div>
         {/* Heading section  about the webpage*/}
       </div>
-      <Navbar />
+      {/* <Navbar /> */}
+
+      <NavbarNewUILook />
     </>
   );
 };

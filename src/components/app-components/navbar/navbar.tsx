@@ -1,10 +1,9 @@
-import { DarkThemeToggle } from "@/components/customize-shadcnui-components/dark-light-toggoler";
 import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50">
-      <nav className="bg-black text-white py-2">
+    <header className="sticky -top-1 z-50">
+      <nav className="bg-black text-white py-5">
         <div className="flex items-center justify-around container">
           {/* Agency Brand Logo 👉*/}
           <div className="">
@@ -26,33 +25,24 @@ const Navbar = () => {
               </a>{" "}
             </li>
             <li className="hover:text-brand ">
-              {" "}
-              <a href="#" className="block">
+              <a href="#ABOUT-SECTION" className="block">
+                About{" "}
+              </a>{" "}
+            </li>
+            <li className="hover:text-brand ">
+              <a href="#FEATURES-SECTION" className="block">
+                Features{" "}
+              </a>{" "}
+            </li>
+            <li className="hover:text-brand ">
+              <a href="#SERVICE-SECTION" className="block">
                 Service{" "}
               </a>{" "}
             </li>
             <li className="hover:text-brand ">
               {" "}
-              <a href="#" className="block">
-                About{" "}
-              </a>{" "}
-            </li>
-            <li className="hover:text-brand ">
-              {" "}
-              <a href="#" className="block">
+              <a href="#PORTFOLIO-SECTION" className="block">
                 Portfolio{" "}
-              </a>{" "}
-            </li>
-            <li className="hover:text-brand ">
-              {" "}
-              <a href="#" className="block">
-                Page{" "}
-              </a>{" "}
-            </li>
-            <li className="hover:text-brand ">
-              {" "}
-              <a href="#" className="block">
-                Blog{" "}
               </a>{" "}
             </li>
             <li className="hover:text-brand ">
@@ -61,7 +51,7 @@ const Navbar = () => {
                 Contact{" "}
               </a>{" "}
             </li>
-            <DarkThemeToggle />
+            {/* <DarkThemeToggle /> */}
           </ul>
           {/* Navigation list item 👈*/}
         </div>

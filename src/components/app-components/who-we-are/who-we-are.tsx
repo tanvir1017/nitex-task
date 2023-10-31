@@ -5,11 +5,11 @@ const WhoWeAreSection = () => {
   return (
     <div
       id="WHO-WE-ARE"
-      className='bg-[url("/assets/images/girl-talking-on-phone.webp")] bg-no-repeat bg-cover'
+      className='bg-[url("/assets/images/girl-talking-on-phone.webp")] bg-no-repeat lg:bg-cover bg-cover'
     >
       <div className="bg-[#1212127a] ">
         <div className="container mx-auto text-center py-4">
-          <div className="mx-auto text-white bg-[url('/assets/images/section-circle.webp')] bg-no-repeat bg-right-top py-32">
+          <div className="mx-auto text-white lg:bg-[url('/assets/images/section-circle.webp')] bg-no-repeat bg-right-top py-32">
             <div className="space-y-10">
               {/* Agency Brand Logo 👉*/}
               <Image
@@ -24,10 +24,10 @@ const WhoWeAreSection = () => {
               {/* Who we are content text  👈*/}
 
               <section className="max-w-3xl mx-auto space-y-10">
-                <h2 className="font-bold text-5xl tracking-wider">
+                <h2 className="font-bold lg:text-5xl text-3xl tracking-wider">
                   WHO WE ARE
                 </h2>
-                <p>
+                <p className="lg:text-base text-sm">
                   Lorem ipsum dolor sit amet, consectetuer ux adipiscing elit,
                   sed diam nonummy nibh and euismod tincidunt ut laoreet dolore
                   magna aliquam erat volutpat. Ut wisi enim ad minim veniam.

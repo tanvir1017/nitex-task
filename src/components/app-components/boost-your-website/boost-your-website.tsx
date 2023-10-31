@@ -6,16 +6,16 @@ const BoostYourWebsiteSection = () => {
   return (
     <div className="bg-[#FAFAFA] py-16 lg:bg-none 2xl:bg-[url('/assets/images/lamp-light.webp')] bg-no-repeat bg-left-top">
       <div className="container">
-        <div className="flex items-center justify-stretch">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-stretch">
           <div>
             <section
               id="ABOUT-SECTION-HEADING-TEXT"
-              className="relative overflow-hidden "
+              className="relative overflow-hidden lg:px-0 px-5"
             >
-              <h2 className="cursor-pointer stroke-text-light dark:stroke-text-dark text-7xl uppercase tracking-wider opacity-5 font-extrabold inline-block">
+              <h2 className="lg:inline-block hidden cursor-pointer stroke-text-light dark:stroke-text-dark lg:text-7xl text-5xl uppercase tracking-wider opacity-5 font-extrabold ">
                 RESPONSIVE
               </h2>
-              <h3 className="text-3xl font-semibold absolute left-0 top-2/4 inline-block">
+              <h3 className="lg:text-3xl text-xl font-semibold absolute left-0 lg:top-2/4 top-0 inline-block">
                 BOOST YOUR WEBSITE
               </h3>
             </section>
@@ -25,19 +25,19 @@ const BoostYourWebsiteSection = () => {
                 quia obcaecati sapiente ducimus aut in?
               </p>
               <ul className="space-y-3">
-                <li>
+                <li className="lg:text-base text-sm">
                   <Sparkle className="w-4 h-4 me-3 text-yellow-500 inline-flex items-center" />{" "}
                   Responsive Design & Retina Ready.
                 </li>
-                <li>
+                <li className="lg:text-base text-sm">
                   <Sparkle className="w-4 h-4 me-3 text-yellow-500 inline-flex items-center" />{" "}
                   Business Solution Any Company.
                 </li>
-                <li>
+                <li className="lg:text-base text-sm">
                   <Sparkle className="w-4 h-4 me-3 text-yellow-500 inline-flex items-center" />{" "}
                   Powerful Admin Panel.
                 </li>
-                <li>
+                <li className="lg:text-base text-sm">
                   <Sparkle className="w-4 h-4 me-3 text-yellow-500 inline-flex items-center" />{" "}
                   24/7 Support.
                 </li>

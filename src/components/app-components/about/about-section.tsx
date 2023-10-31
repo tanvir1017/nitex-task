@@ -7,21 +7,18 @@ const AboutSection = () => {
       {/*About Section Heading Text Start From Here */}
 
       <section
-        id="ABOUT-SECTION-HEADING-TEXT"
+        id="ABOUT-SECTION"
         className="text-center relative overflow-hidden "
       >
         <h2 className="cursor-pointer stroke-text-light dark:stroke-text-dark text-7xl uppercase tracking-wider opacity-10 font-extrabold inline-block">
           ABOUT
         </h2>
-        <h3 className="text-3xl font-semibold absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-3/4 inline-block text-gray-600">
+        <h3 className="lg:text-3xl font-semibold absolute left-1/2 top-3/4 -translate-x-1/2 -translate-y-3/4 inline-block text-gray-600">
           THIS IS THE ONE PAGE POLO
         </h3>
       </section>
-      <section
-        id="SECTION-DESCRIPTION"
-        className="max-w-2xl block mx-auto my-2"
-      >
-        <p className="text-center text-sm">
+      <section className="max-w-2xl block mx-auto my-2 lg:px-0 px-5">
+        <p className="lg:text-center text-left text-sm">
           Molestie ultricies quam. Donec at sem. Praesent pretium. Maorbi quis
           nulla vehicula felsd laoreet. Sed ullamcorper arcu ente. Sed tempus
           tempor cild Nulla vierra ultrices magnal Nam rutrum congue diam.do
@@ -47,7 +44,7 @@ const AboutSection = () => {
       {/*About Section Card Start From Here */}
 
       <div className="mx-auto max-w-3xl mt-16 ">
-        <div className="flex items-center justify-around">
+        <div className="flex lg:flex-row flex-col lg:space-y-5 space-y-5 items-center justify-around">
           {/* Card Number One 1️⃣ Start From here */}
           <div className="h-[15.3125rem] w-[14rem] bg-black grid">
             <div className="m-auto">
@@ -115,18 +112,18 @@ const AboutSection = () => {
       {/*About Section Impression Number 🔢 Start From Here */}
 
       {/* <div className="bg-[url('/assets/images/bg-tablet.webp')] bg-no-repeat bg-right-top bg-cover w-80"></div> */}
-      <div className="mx-auto mt-36">
+      <div className="mx-auto mt-36 lg:px-0 px-3">
         <h2 className="text-center text-3xl font-bold text-gray-700">
           HERE'RE SOME IMPRESSIVE NUMBER ABOUT US
         </h2>
-        <div className="grid grid-cols-4 place-items-center max-w-2xl mx-auto my-16">
+        <div className="grid lg:grid-cols-4 grid-cols-2 lg:place-items-center max-w-2xl mx-auto my-16">
           <div className="text-center">
             <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
               7522
             </h3>
             <p className="text-xs">Project Complete</p>
           </div>
-          <div className="text-center">
+          <div className="text-center lg:mb-0 mb-10">
             <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
               4222
             </h3>
