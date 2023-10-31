@@ -22,6 +22,7 @@ export default function Home() {
       <ServiceSection />
       <PricingSection />
       <MeetOurExpert />
+      {/* <SimpleSlider /> */}
       <JoinWithUsSection />
       <ContactUs />
     </main>

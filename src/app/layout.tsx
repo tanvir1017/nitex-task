@@ -1,6 +1,8 @@
 import Footer from "@/components/app-components/footer/footer";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "./globals.css";
 
 const poppins = Poppins({

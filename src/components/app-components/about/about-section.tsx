@@ -1,7 +1,14 @@
+// @ts-nocheck
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 
 const AboutSection = () => {
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <div className="py-16">
       {/*About Section Heading Text Start From Here */}
@@ -43,8 +50,8 @@ const AboutSection = () => {
 
       {/*About Section Card Start From Here */}
 
-      <div className="mx-auto max-w-3xl mt-16 ">
-        <div className="flex lg:flex-row flex-col lg:space-y-5 space-y-5 items-center justify-around">
+      <div className="mx-auto max-w-3xl mt-16">
+        <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-5 items-center justify-around">
           {/* Card Number One 1️⃣ Start From here */}
           <div className="h-[15.3125rem] w-[14rem] bg-black grid">
             <div className="m-auto">
@@ -116,32 +123,39 @@ const AboutSection = () => {
         <h2 className="text-center text-3xl font-bold text-gray-700">
           HERE'RE SOME IMPRESSIVE NUMBER ABOUT US
         </h2>
-        <div className="grid lg:grid-cols-4 grid-cols-2 lg:place-items-center max-w-2xl mx-auto my-16">
-          <div className="text-center">
-            <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
-              7522
-            </h3>
-            <p className="text-xs">Project Complete</p>
-          </div>
-          <div className="text-center lg:mb-0 mb-10">
-            <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
-              4222
-            </h3>
-            <p className="text-xs">On Going Projects</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
-              6980+
-            </h3>
-            <p className="text-xs">Happy Client</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
-              100%
-            </h3>
-            <p className="text-xs">Positive Feedback</p>
-          </div>
-        </div>
+        <ScrollTrigger
+          onEnter={() => setCounterOn(true)}
+          // onExit={() => setCounterOn(false)}
+        >
+          {counterOn && (
+            <div className="grid lg:grid-cols-4 grid-cols-2 lg:place-items-center max-w-2xl mx-auto my-16">
+              <div className="text-center">
+                <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
+                  <CountUp start={0} duration={10} end={7522} delay={0} />
+                </h3>
+                <p className="text-xs">Project Complete</p>
+              </div>
+              <div className="text-center lg:mb-0 mb-10">
+                <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
+                  <CountUp start={0} duration={10} end={4222} delay={0} />
+                </h3>
+                <p className="text-xs">On Going Projects</p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
+                  <CountUp start={0} duration={10} end={6980} delay={0} />+
+                </h3>
+                <p className="text-xs">Happy Client</p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-4xl tracking-wider font-extrabold text-gray-600">
+                  <CountUp start={0} duration={10} end={100} delay={0} />%
+                </h3>
+                <p className="text-xs">Positive Feedback</p>
+              </div>
+            </div>
+          )}
+        </ScrollTrigger>
       </div>
       {/*About Section Impression Number 🔢 End From Here */}
     </div>
