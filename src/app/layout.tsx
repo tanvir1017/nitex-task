@@ -1,5 +1,4 @@
 import Footer from "@/components/app-components/footer/footer";
-import { ThemeProvider } from "@/components/customize-shadcnui-components/theme-provider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -23,16 +22,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={poppins.className}>
-        <ThemeProvider
+        {children}
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
-          {children}
-          <Footer />
-        </ThemeProvider>
+          
+        </ThemeProvider> */}
+        <Footer />
       </body>
     </html>
   );
