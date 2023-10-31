@@ -5,6 +5,7 @@ import Features from "@/components/app-components/features/features";
 import HeadingSection from "@/components/app-components/heading-section/heading-section";
 import JoinWithUsSection from "@/components/app-components/join-with-us/join-with-us";
 import MeetOurExpert from "@/components/app-components/meet-our-expert/meet-our-expert";
+import ScrollCarouselComponent from "@/components/app-components/meet-our-expert/slider";
 import Portfolio from "@/components/app-components/our-portfolio/portfolio";
 import PricingSection from "@/components/app-components/pricing/pricing";
 import ServiceSection from "@/components/app-components/service/service-section";
@@ -15,6 +16,7 @@ export default function Home() {
     <main className="App">
       <HeadingSection />
       <AboutSection />
+
       <BoostYourWebsiteSection />
       <WhoWeAreSection />
       <Features />
@@ -22,7 +24,7 @@ export default function Home() {
       <ServiceSection />
       <PricingSection />
       <MeetOurExpert />
-      {/* <SimpleSlider /> */}
+      <ScrollCarouselComponent />
       <JoinWithUsSection />
       <ContactUs />
     </main>
